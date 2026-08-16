@@ -1,0 +1,286 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 20
+Design : vending_machine
+Version: W-2024.09-SP1
+****************************************
+
+Operating Conditions: tt0p85v25c   Library: saed32rvt_tt0p85v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: in[1] (input port clocked by Clock)
+  Endpoint: out_reg (rising edge-triggered flip-flop clocked by Clock)
+  Path Group: Clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vending_machine    ForQA                 saed32rvt_tt0p85v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock Clock (rise edge)                0.0000     0.0000
+  clock network delay (ideal)            0.0000     0.0000
+  input external delay                   1.0000     1.0000 f
+  in[1] (in)                             0.0000     1.0000 f
+  U18/Y (INVX0_RVT)                      0.0761     1.0761 r
+  U21/Y (NAND2X0_RVT)                    0.0690     1.1451 f
+  U23/Y (NAND2X0_RVT)                    0.1062     1.2514 r
+  U28/Y (INVX0_RVT)                      0.0428     1.2942 f
+  U29/Y (OAI22X1_RVT)                    0.1174     1.4116 r
+  out_reg/RSTB (DFFSSRX1_RVT)            0.0169     1.4285 r
+  data arrival time                                 1.4285
+
+  clock Clock (rise edge)                5.0000     5.0000
+  clock network delay (ideal)            0.0000     5.0000
+  clock uncertainty                     -0.2000     4.8000
+  out_reg/CLK (DFFSSRX1_RVT)             0.0000     4.8000 r
+  library setup time                    -0.1106     4.6894
+  data required time                                4.6894
+  -----------------------------------------------------------
+  data required time                                4.6894
+  data arrival time                                -1.4285
+  -----------------------------------------------------------
+  slack (MET)                                       3.2609
+
+
+  Startpoint: in[1] (input port clocked by Clock)
+  Endpoint: change_reg[0]
+            (rising edge-triggered flip-flop clocked by Clock)
+  Path Group: Clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vending_machine    ForQA                 saed32rvt_tt0p85v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock Clock (rise edge)                0.0000     0.0000
+  clock network delay (ideal)            0.0000     0.0000
+  input external delay                   1.0000     1.0000 f
+  in[1] (in)                             0.0000     1.0000 f
+  U18/Y (INVX0_RVT)                      0.0761     1.0761 r
+  U22/Y (OR2X1_RVT)                      0.0944     1.1705 r
+  U23/Y (NAND2X0_RVT)                    0.0801     1.2506 f
+  U26/Y (OAI22X1_RVT)                    0.1236     1.3742 r
+  change_reg[0]/RSTB (DFFSSRX1_RVT)      0.0169     1.3911 r
+  data arrival time                                 1.3911
+
+  clock Clock (rise edge)                5.0000     5.0000
+  clock network delay (ideal)            0.0000     5.0000
+  clock uncertainty                     -0.2000     4.8000
+  change_reg[0]/CLK (DFFSSRX1_RVT)       0.0000     4.8000 r
+  library setup time                    -0.1105     4.6895
+  data required time                                4.6895
+  -----------------------------------------------------------
+  data required time                                4.6895
+  data arrival time                                -1.3911
+  -----------------------------------------------------------
+  slack (MET)                                       3.2984
+
+
+  Startpoint: in[1] (input port clocked by Clock)
+  Endpoint: change_reg[1]
+            (rising edge-triggered flip-flop clocked by Clock)
+  Path Group: Clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vending_machine    ForQA                 saed32rvt_tt0p85v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock Clock (rise edge)                0.0000     0.0000
+  clock network delay (ideal)            0.0000     0.0000
+  input external delay                   1.0000     1.0000 f
+  in[1] (in)                             0.0000     1.0000 f
+  U18/Y (INVX0_RVT)                      0.0761     1.0761 r
+  U22/Y (OR2X1_RVT)                      0.0944     1.1705 r
+  U23/Y (NAND2X0_RVT)                    0.0801     1.2506 f
+  U27/Y (NOR2X0_RVT)                     0.1196     1.3702 r
+  change_reg[1]/RSTB (DFFSSRX1_RVT)      0.0169     1.3871 r
+  data arrival time                                 1.3871
+
+  clock Clock (rise edge)                5.0000     5.0000
+  clock network delay (ideal)            0.0000     5.0000
+  clock uncertainty                     -0.2000     4.8000
+  change_reg[1]/CLK (DFFSSRX1_RVT)       0.0000     4.8000 r
+  library setup time                    -0.1107     4.6893
+  data required time                                4.6893
+  -----------------------------------------------------------
+  data required time                                4.6893
+  data arrival time                                -1.3871
+  -----------------------------------------------------------
+  slack (MET)                                       3.3022
+
+
+  Startpoint: in[1] (input port clocked by Clock)
+  Endpoint: c_state_reg[1]
+            (rising edge-triggered flip-flop clocked by Clock)
+  Path Group: Clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vending_machine    ForQA                 saed32rvt_tt0p85v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock Clock (rise edge)                0.0000     0.0000
+  clock network delay (ideal)            0.0000     0.0000
+  input external delay                   1.0000     1.0000 f
+  in[1] (in)                             0.0000     1.0000 f
+  U18/Y (INVX0_RVT)                      0.0761     1.0761 r
+  U22/Y (OR2X1_RVT)                      0.0944     1.1705 r
+  U32/Y (INVX0_RVT)                      0.0413     1.2118 f
+  U33/Y (OA221X1_RVT)                    0.1070     1.3188 f
+  c_state_reg[1]/RSTB (DFFSSRX1_RVT)     0.0168     1.3357 f
+  data arrival time                                 1.3357
+
+  clock Clock (rise edge)                5.0000     5.0000
+  clock network delay (ideal)            0.0000     5.0000
+  clock uncertainty                     -0.2000     4.8000
+  c_state_reg[1]/CLK (DFFSSRX1_RVT)      0.0000     4.8000 r
+  library setup time                    -0.1069     4.6931
+  data required time                                4.6931
+  -----------------------------------------------------------
+  data required time                                4.6931
+  data arrival time                                -1.3357
+  -----------------------------------------------------------
+  slack (MET)                                       3.3574
+
+
+  Startpoint: in[1] (input port clocked by Clock)
+  Endpoint: c_state_reg[0]
+            (rising edge-triggered flip-flop clocked by Clock)
+  Path Group: Clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vending_machine    ForQA                 saed32rvt_tt0p85v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock Clock (rise edge)                0.0000     0.0000
+  clock network delay (ideal)            0.0000     0.0000
+  input external delay                   1.0000     1.0000 f
+  in[1] (in)                             0.0000     1.0000 f
+  U18/Y (INVX0_RVT)                      0.0761     1.0761 r
+  U21/Y (NAND2X0_RVT)                    0.0690     1.1451 f
+  U30/Y (INVX0_RVT)                      0.0693     1.2145 r
+  U31/Y (AND3X1_RVT)                     0.0851     1.2996 r
+  c_state_reg[0]/RSTB (DFFSSRX1_RVT)     0.0169     1.3165 r
+  data arrival time                                 1.3165
+
+  clock Clock (rise edge)                5.0000     5.0000
+  clock network delay (ideal)            0.0000     5.0000
+  clock uncertainty                     -0.2000     4.8000
+  c_state_reg[0]/CLK (DFFSSRX1_RVT)      0.0000     4.8000 r
+  library setup time                    -0.1122     4.6878
+  data required time                                4.6878
+  -----------------------------------------------------------
+  data required time                                4.6878
+  data arrival time                                -1.3165
+  -----------------------------------------------------------
+  slack (MET)                                       3.3713
+
+
+  Startpoint: out_reg (rising edge-triggered flip-flop clocked by Clock)
+  Endpoint: out (output port clocked by Clock)
+  Path Group: Clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vending_machine    ForQA                 saed32rvt_tt0p85v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock Clock (rise edge)                0.0000     0.0000
+  clock network delay (ideal)            0.0000     0.0000
+  out_reg/CLK (DFFSSRX1_RVT)             0.0000     0.0000 r
+  out_reg/Q (DFFSSRX1_RVT)               0.1351     0.1351 f
+  out (out)                              0.0041     0.1392 f
+  data arrival time                                 0.1392
+
+  clock Clock (rise edge)                5.0000     5.0000
+  clock network delay (ideal)            0.0000     5.0000
+  clock uncertainty                     -0.2000     4.8000
+  output external delay                 -1.0000     3.8000
+  data required time                                3.8000
+  -----------------------------------------------------------
+  data required time                                3.8000
+  data arrival time                                -0.1392
+  -----------------------------------------------------------
+  slack (MET)                                       3.6608
+
+
+  Startpoint: change_reg[1]
+              (rising edge-triggered flip-flop clocked by Clock)
+  Endpoint: change[1] (output port clocked by Clock)
+  Path Group: Clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vending_machine    ForQA                 saed32rvt_tt0p85v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock Clock (rise edge)                0.0000     0.0000
+  clock network delay (ideal)            0.0000     0.0000
+  change_reg[1]/CLK (DFFSSRX1_RVT)       0.0000     0.0000 r
+  change_reg[1]/Q (DFFSSRX1_RVT)         0.1351     0.1351 f
+  change[1] (out)                        0.0041     0.1392 f
+  data arrival time                                 0.1392
+
+  clock Clock (rise edge)                5.0000     5.0000
+  clock network delay (ideal)            0.0000     5.0000
+  clock uncertainty                     -0.2000     4.8000
+  output external delay                 -1.0000     3.8000
+  data required time                                3.8000
+  -----------------------------------------------------------
+  data required time                                3.8000
+  data arrival time                                -0.1392
+  -----------------------------------------------------------
+  slack (MET)                                       3.6608
+
+
+  Startpoint: change_reg[0]
+              (rising edge-triggered flip-flop clocked by Clock)
+  Endpoint: change[0] (output port clocked by Clock)
+  Path Group: Clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vending_machine    ForQA                 saed32rvt_tt0p85v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock Clock (rise edge)                0.0000     0.0000
+  clock network delay (ideal)            0.0000     0.0000
+  change_reg[0]/CLK (DFFSSRX1_RVT)       0.0000     0.0000 r
+  change_reg[0]/Q (DFFSSRX1_RVT)         0.1351     0.1351 f
+  change[0] (out)                        0.0041     0.1392 f
+  data arrival time                                 0.1392
+
+  clock Clock (rise edge)                5.0000     5.0000
+  clock network delay (ideal)            0.0000     5.0000
+  clock uncertainty                     -0.2000     4.8000
+  output external delay                 -1.0000     3.8000
+  data required time                                3.8000
+  -----------------------------------------------------------
+  data required time                                3.8000
+  data arrival time                                -0.1392
+  -----------------------------------------------------------
+  slack (MET)                                       3.6608
+
+
+1
