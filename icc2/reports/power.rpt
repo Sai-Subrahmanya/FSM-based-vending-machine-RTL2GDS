@@ -1,0 +1,73 @@
+****************************************
+Report : power
+        -significant_digits 2
+Design : vending_machine
+Version: W-2024.09-SP1
+****************************************
+Information: Activity for scenario func.nom was cached, no propagation required. (POW-005)
+Mode: func
+Corner: nom
+Scenario: func.nom
+Voltage: 0.75
+Temperature: 125.00
+
+Voltage Unit         : 1V
+Capacitance Unit     : 1fF
+Time Unit            : 1ns
+Temperature Unit     : 1C
+Dynamic Power Unit   : 1pW
+Leakage Power Unit   : 1pW
+
+Switched supply net power scaling:
+scaling for leakage power
+
+Supply nets:
+VDD (power) probability 1.00 (default)
+VSS (ground) probability 1.00 (default)
+Warning: While computing leakage for instance 'xofiller!SHFILL1_RVT!x53040y66720', mismatches in operating condition settings have been found in the design. (POW-039)
+Warning: While computing leakage for instance 'xofiller!SHFILL1_RVT!x60640y83440', mismatches in operating condition settings have been found in the design. (POW-039)
+Warning: While computing leakage for instance 'xofiller!SHFILL1_RVT!x115360y66720', mismatches in operating condition settings have been found in the design. (POW-039)
+Warning: While computing leakage for instance 'xofiller!SHFILL1_RVT!x97120y83440', mismatches in operating condition settings have been found in the design. (POW-039)
+Warning: While computing leakage for instance 'xofiller!SHFILL1_RVT!x116880y66720', mismatches in operating condition settings have been found in the design. (POW-039)
+Warning: While computing leakage for instance 'xofiller!SHFILL1_RVT!x98640y83440', mismatches in operating condition settings have been found in the design. (POW-039)
+Warning: While computing leakage for instance 'xofiller!SHFILL1_RVT!x118400y66720', mismatches in operating condition settings have been found in the design. (POW-039)
+Warning: While computing leakage for instance 'xofiller!SHFILL1_RVT!x100160y83440', mismatches in operating condition settings have been found in the design. (POW-039)
+Warning: While computing leakage for instance 'xofiller!SHFILL1_RVT!x119920y66720', mismatches in operating condition settings have been found in the design. (POW-039)
+Warning: While computing leakage for instance 'xofiller!SHFILL1_RVT!x101680y83440', mismatches in operating condition settings have been found in the design. (POW-039)
+Note - message 'POW-039' limit (10) exceeded. Remainder will be suppressed.
+Warning: Power table extrapolation (extrapolation mode) for port A1 on cell U19 for parameter Tinp. Lowest table value = 0.016000, highest table value = 1.024000, value = 0.000095 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CLK on cell change_reg[0] for parameter Tinp. Lowest table value = 0.016000, highest table value = 1.024000, value = 0.000172 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port Y on cell U19 for parameter Tinp. Lowest table value = 0.016000, highest table value = 1.024000, value = 0.000095 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port Q on cell change_reg[0] for parameter Tinp. Lowest table value = 0.016000, highest table value = 1.024000, value = 0.000172 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port QN on cell change_reg[0] for parameter Tinp. Lowest table value = 0.016000, highest table value = 1.024000, value = 0.000172 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port QN on cell change_reg[0] for parameter Cout. Lowest table value = 0.000100, highest table value = 0.008000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CLK on cell out_reg for parameter Tinp. Lowest table value = 0.016000, highest table value = 1.024000, value = 0.000172 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port Q on cell out_reg for parameter Tinp. Lowest table value = 0.016000, highest table value = 1.024000, value = 0.000172 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port QN on cell out_reg for parameter Tinp. Lowest table value = 0.016000, highest table value = 1.024000, value = 0.000172 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port QN on cell out_reg for parameter Cout. Lowest table value = 0.000100, highest table value = 0.008000, value = 0.000000 (POW-046)
+Note - message 'POW-046' limit (10) exceeded. Remainder will be suppressed.
+
+  Cell Internal Power    = 4.38e+06 pW ( 93.4%)
+  Net Switching Power    = 3.11e+05 pW (  6.6%)
+Total Dynamic Power      = 4.70e+06 pW (100.0%)
+
+Cell Leakage Power       = 1.22e+06 pW
+
+
+  Attributes
+  ----------
+      u  -  User defined power group
+      i  -  Includes clock pin internal power
+
+Power Group         Internal Power        Switching Power          Leakage Power            Total Power    (   %  )    Attrs
+-----------------------------------------------------------------------------------------------------------------------------
+io_pad                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+memory                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+black_box                 0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+clock_network             3.28e+06               0.00e+00               0.00e+00               3.28e+06    ( 55.5%)        i
+register                  8.20e+05               7.79e+04               8.44e+05               1.74e+06    ( 29.5%)         
+sequential                0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+combinational             2.83e+05               2.33e+05               3.75e+05               8.91e+05    ( 15.1%)         
+-----------------------------------------------------------------------------------------------------------------------------
+Total                     4.38e+06 pW            3.11e+05 pW            1.22e+06 pW            5.91e+06 pW
+1

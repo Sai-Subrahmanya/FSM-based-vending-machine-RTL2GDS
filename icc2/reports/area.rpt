@@ -1,0 +1,25 @@
+****************************************
+Report : report_utilization
+Design : vending_machine
+Version: W-2024.09-SP1
+****************************************
+Utilization Ratio:			0.8219
+Utilization options:
+ - Area calculation based on:		site_row of block vending_machine
+ - Categories of objects excluded:	hard_macros macro_keepouts soft_macros io_cells hard_blockages 
+Total Area:				81.3261
+Total Capacity Area:			81.3261
+Total Area of cells:			66.8399
+Area of excluded objects:
+ - hard_macros         :		0.0000
+ - macro_keepouts      :		0.0000
+ - soft_macros         :		0.0000
+ - io_cells            :		0.0000
+ - hard_blockages      :		0.0000
+Total Area of excluded objects:		0.0000
+Ratio of excluded objects:		0.0000
+
+Utilization of site-rows with:
+ - Site 'unit':				0.8219
+
+0.8219

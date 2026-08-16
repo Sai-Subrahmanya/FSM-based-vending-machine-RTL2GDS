@@ -1,0 +1,49 @@
+****************************************
+Report : constraint
+        -verbose
+        -all_violators
+Design : vending_machine
+Version: W-2024.09-SP1
+****************************************
+
+   late_timing
+   -----------
+
+No paths.
+
+   early_timing
+   -----------
+
+No paths.
+
+   Mode: func Corner: nom
+   Scenario: func.nom
+    Net: n22
+    max_transition         0.20
+  - Transition Time        0.14
+  --------------------------------
+    Slack                  0.06 (MET)
+
+
+  ---------------------------------------------------------------------------
+   Number of max_transition violation(s): 0
+
+   Mode: func Corner: nom
+   Scenario: func.nom
+  ---------------------------------------------------------------------------
+   Number of max_capacitance violation(s): 0
+
+
+   Mode: func Corner: nom
+   Scenario: func.nom
+  ---------------------------------------------------------------------------
+   Number of min_capacitance violation(s): 0
+
+  Mode: func
+  Corner: nom
+  Scenario: func.nom
+
+  ---------------------------------------------------------------------------
+   Number of min_pulse_width violation(s): 0
+   Total number of violation(s): 0
+1

@@ -1,0 +1,6 @@
+../results/vending_machine_icc2.spef.tlu_max_125.spef for scenarios: 
+	 scenario: func.nom, corner type: late
+
+../results/vending_machine_icc2.spef.tlu_min_125.spef for scenarios: 
+	 scenario: func.nom, corner type: early
+
